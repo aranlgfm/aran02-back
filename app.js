@@ -31,7 +31,7 @@ router.get('/', (req, res) => {
     Feel.find((err, feels) => {
         if (err)
             return res.status(500).send('feels find failure')
-        res.status(200).send({ feels: feels })
+        res.status(200).send(feels)
     })
 })
 
